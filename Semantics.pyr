@@ -1,0 +1,76 @@
+# Pyramid Programming Language Semantics File
+
+# Basic Semantics
+# This file defines the meaning of various language constructs and their behaviors.
+
+# Identifiers
+# An identifier represents a name for a variable, function, class, etc.
+# It is used to store and reference values in the program.
+
+identifier_semantics = """
+An identifier must be alphanumeric, starting with a letter or underscore.
+It is case-sensitive and cannot be a keyword.
+"""
+
+# Keywords
+# Keywords represent reserved words that perform specific functions in the language.
+# They have special meanings and cannot be used as identifiers.
+
+keywords_semantics = """
+Keywords such as 'if', 'else', 'while', etc., have specific purposes in controlling
+the flow of the program or declaring specific behaviors.
+"""
+
+# Data Types
+# Pyramid supports multiple data types, each with a specific role and behavior.
+data_type_semantics = """
+Integer - Represents whole numbers.
+Float - Represents numbers with a decimal point.
+String - Represents text or a sequence of characters.
+Boolean - Represents true or false values.
+Null - Represents an absence of value.
+Array - Represents an ordered collection of elements.
+Object - Represents a collection of key-value pairs (similar to dictionaries).
+Function - Represents a callable set of instructions.
+"""
+
+# Operators
+# Operators are used to perform operations on variables or values.
+operator_semantics = """
+Arithmetic Operators - Used for mathematical calculations.
+Comparison Operators - Used for comparing values.
+Logical Operators - Used for logical expressions (AND, OR, NOT).
+Assignment Operators - Used for assigning or modifying values.
+Ternary Operator - A shorthand way of writing if-else statements.
+"""
+
+# Control Flow
+# Control flow defines the order in which statements are executed.
+control_flow_semantics = """
+If-Else - Executes one block of code if the condition is true, otherwise another block.
+While - Repeats a block of code as long as the condition is true.
+For - Iterates over a collection or range of items.
+"""
+
+# Functions
+# Functions are reusable blocks of code that take parameters and return values.
+function_semantics = """
+A function is defined with the 'def' keyword, followed by the function name and parameters.
+It executes the body of code within it and returns a result.
+"""
+
+# Classes and Objects
+# Classes are blueprints for creating objects, with properties and methods.
+class_object_semantics = """
+Classes are defined using the 'class' keyword. They can have methods and constructors
+to initialize their state and behavior.
+Objects are instances of classes and represent specific entities with data and functionality.
+"""
+
+# Modules and Imports
+# Modules allow for code reuse by importing pre-written code into the current script.
+import_semantics = """
+Modules are imported using the 'import' keyword followed by the module name.
+Once imported, the functions and variables from the module are accessible within the program.
+"""
+
