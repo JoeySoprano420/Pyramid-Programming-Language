@@ -1,0 +1,52 @@
+# Pyramid Programming Language Rules File
+
+# Syntax Rules
+# This section defines the rules that govern the structure of valid Pyramid code.
+
+syntax_rules = """
+1. Identifiers must begin with a letter or underscore, followed by letters, digits, or underscores.
+2. Keywords cannot be used as identifiers.
+3. A statement must end with a newline or a block of code.
+4. Function definitions must include the 'def' keyword and specify parameters and return statements.
+5. Classes must be defined using the 'class' keyword and include a constructor and methods.
+6. Each block of code must be indented properly using spaces or tabs.
+7. Imports must use the 'import' keyword followed by the module name.
+8. Parentheses are used for function calls, while curly braces define code blocks in loops or conditionals.
+"""
+
+# Semantic Rules
+# Defines how the language constructs should behave during execution.
+
+semantic_rules = """
+1. Variables must be declared before use. Assignment must follow the syntax: 'var identifier = expression' or 'const identifier = value'.
+2. The assignment operator '=' binds a value to a variable, while '+=', '-=', etc., modify the current value of a variable.
+3. The 'if' statement evaluates a condition and executes the corresponding block of code if true, or the else block if provided.
+4. The 'while' loop continues executing as long as the condition is true.
+5. Functions return a value when the 'return' keyword is encountered. The function must exit at this point.
+6. Classes allow object-oriented programming by encapsulating data and methods in an organized structure.
+7. Objects are instantiated from classes and can access their properties and methods.
+8. Modules must be imported for external functions and variables to be used within the program.
+"""
+
+# Error Handling Rules
+# Pyramid has specific rules for handling errors during execution.
+
+error_handling_rules = """
+1. Syntax errors will be reported if the program contains invalid constructs or mismatched symbols.
+2. Runtime errors occur if the program attempts to perform an operation on incompatible data types (e.g., dividing by zero).
+3. Undefined variables or functions will trigger an error message when referenced.
+4. Memory issues or exceeding system limits may cause unexpected program termination.
+5. When errors occur, a stack trace will display the line of code and the type of error.
+"""
+
+# Execution Order Rules
+# The order in which statements and functions are executed follows a specific pattern.
+
+execution_order_rules = """
+1. Code execution begins from the top of the file.
+2. Function definitions are not executed until they are called in the program.
+3. Conditional statements like 'if' and 'while' are executed in order, based on the conditions specified.
+4. Loops repeat until their condition is no longer true or a break statement is encountered.
+5. Functions are executed when called, and their return value can be used in expressions or statements.
+6. Classes and objects are created as needed, and their methods are invoked during execution.
+"""
