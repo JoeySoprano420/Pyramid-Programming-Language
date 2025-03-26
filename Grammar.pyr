@@ -1,0 +1,49 @@
+# Pyramid Programming Language Grammar File
+
+# Basic Grammar
+# The following defines the basic rules of Pyramid's grammar.
+
+expression = "identifier | literal | expression operator expression"
+
+statement = "if_statement | while_statement | for_statement | function_definition"
+
+if_statement = """
+if condition:
+    statement
+else:
+    statement
+"""
+
+while_statement = """
+while condition:
+    statement
+"""
+
+for_statement = """
+for item in iterable:
+    statement
+"""
+
+function_definition = """
+def function_name(param1, param2):
+    statement
+    return expression
+"""
+
+# Variable Declaration Grammar
+variable_declaration = """
+var identifier = expression
+const identifier = value
+"""
+
+# Class Definition Grammar
+class_definition = """
+class ClassName:
+    def __init__(self, param1, param2):
+        statement
+    def method(self):
+        statement
+"""
+
+# Import Module Grammar
+import_statement = "import module_name"
